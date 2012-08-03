@@ -8,6 +8,8 @@ TODO: something breaks (i.e. too many stills are generated) when 'start' (ffmpeg
 TODO: turn this into a Django management command
 
 NOTE: only tested in Linux Ubuntu 12.04
+
+Dimitri Pater ~ Django Web Studio
 """
 
 import sys,os,re
