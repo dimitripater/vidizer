@@ -34,7 +34,7 @@ def vidizer(v, d):
         sequence.append(x.time().strftime("%H:%M:%S"))
         interval += 1/rate
         # preview: play n seconds from every still
-        #output = Popen(["mplayer", video, "-vo", "x11", "-ss", x.time().strftime("%H:%M:%S"), "-endpos", str(view_for) ]).communicate()
+        output = Popen(["mplayer", video, "-vo", "x11", "-ss", x.time().strftime("%H:%M:%S"), "-endpos", str(view_for) ]).communicate()
     # remove first frame because it is generated twice by ffmpeg, I don't know why it is generated twice.
     os.remove("%s-1.png" % video)
     # maybe after watching it do not store the object in a database and delete the files
